@@ -1,5 +1,9 @@
 import Router from "@/infra/Router";
+import DoctorController from "@/infra/Controller/DoctorControllerImpl";
 
-const app = new Router();
+
+const doctorController = new DoctorController();
+
+const app = new Router(doctorController);
 
 export default app;

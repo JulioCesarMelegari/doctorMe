@@ -9,6 +9,11 @@ export default class ListDoctorUseCase{
         if(!doctors){
             throw new Error('No doctors found');
         }
-        return doctors;
+        return [
+            {
+                id:1,
+                name: 'Florisval Norbertor'
+            },
+        ];
     }
 }
